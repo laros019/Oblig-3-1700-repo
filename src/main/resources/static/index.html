@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Title</title>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class = "col-md-4">
+  <h1>Bestilling av kinobiletter</h1>
+  <div class = "form">
+    <div class = "form-group">
+      <label>Velg film:</label>
+      <select class="form-control" id = "film">
+        <option disabled selected>Velg film her</option>
+        <option name= "Film" value="Arrival">Arrival</option>
+        <option name = "Film" value="Leon">Leon</option>
+        <option name = "Film" value="Madagaskar">Madagaskar</option>
+        <option name = "Film" value="Ringenes Herre: Atter en Konge">Ringenes Herre: Atter en Konge</option>
+      </select>
+        <span id="ikkeValgtFilm"></span>
+    </div>
+    <div class="form-group">
+      <label>Antall</label>
+      <input id="Antall" type="text" class="form-control"><span id="ikkeAntall"></span>
+    </div>
+    <div class="form-group">
+      <label>Fornavn</label>
+      <input id="Fornavn" type="text" class="form-control"><span id="ikkeFornavn"></span>
+    </div>
+    <div class="form-group">
+      <label>Etternavn</label>
+      <input id="Etternavn" type="text" class="form-control"><span id="ikkeEtternavn"></span>
+    </div>
+    <div class="form-group">
+      <label>Telefonnummer:</label>
+      <input id="Telefonnr" type="text" class="form-control"><span id="ikkeTlf"></span>
+    </div>
+    <div class="form-group">
+      <label>Epost</label>
+      <input id="Epost" type="text" class="form-control"><span id="ikkeEpost"></span>
+    </div>
+  </div>
+
+<button class="btn btn-primary" onclick="kjopBillett()">Kjøp billett</button>
+<br><br>
+<h2>Alle Billetter:</h2>
+  <div class="table" id="AlleBilletter"></div>
+  <button class="btn btn-danger"onclick="slettAlle()">Slett alle billettene</button>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
